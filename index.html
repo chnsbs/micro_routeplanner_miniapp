@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions List</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .attraction { margin-bottom: 10px; }
+        .attraction h3 { margin: 0; }
+    </style>
+</head>
+<body>
+    <h1>Attractions</h1>
+    <div id="attractions-list"></div>
+
+    <script>
+        // Sample data - replace this with data fetched from your bot
+        const attractions = [
+            { name: "Eiffel Tower", summary: "An iconic symbol of Paris." },
+            { name: "Louvre Museum", summary: "The world's largest art museum." },
+            { name: "Notre-Dame Cathedral", summary: "A medieval Catholic cathedral." }
+        ];
+
+        const attractionsList = document.getElementById('attractions-list');
+
+        attractions.forEach(attraction => {
+            const attractionDiv = document.createElement('div');
+            attractionDiv.className = 'attraction';
+            attractionDiv.innerHTML = `<h3>${attraction.name}</h3><p>${attraction.summary}</p>`;
+            attractionsList.appendChild(attractionDiv);
+        });
+    </script>
+</body>
+</html>
