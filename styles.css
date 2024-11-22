@@ -41,3 +41,21 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.demo-gif {
+    margin: 2rem 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.demo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.demo:hover {
+    transform: scale(1.02);
+}
