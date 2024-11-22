@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const qrCodeElement = document.getElementById("qrcode");
-    const telegramUrl = "https://t.me/YourBotHandle";
+    const telegramUrl = "https://t.me/routePlanner_bot";
 
     new QRCode(qrCodeElement, {
         text: telegramUrl,
