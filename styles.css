@@ -185,3 +185,28 @@ p {
 .social-links a:hover {
     opacity: 1;
 }
+
+.quick-access {
+    margin: 2rem auto;
+    text-align: center;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.quick-access p {
+    margin: 1rem 0 0 0;
+}
+
+#qrcode {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#qrcode img {
+    max-width: 180px;
+    height: auto;
+}
