@@ -71,6 +71,27 @@ footer {
     }
 }
 
+
+.demo-video {
+    margin: 2rem auto;
+    text-align: center;
+    overflow: hidden;
+    max-width: min(90vw, 600px);
+}
+
+.demo-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+@media (hover: hover) {
+    .demo-video video:hover {
+        transform: scale(1.02);
+    }
+}
 #qrcode {
     display: flex;
     justify-content: center;
