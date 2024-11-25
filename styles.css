@@ -1,416 +1,89 @@
+/* Modern font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #2D3748;
+    background-color: #F7FAFC;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    padding: 4rem 0;
+    margin-bottom: 3rem;
 }
 
-header h1 {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    margin: 0.5em 0;
-}
-
-.logo {
-    width: clamp(60px, 15vw, 100px);
-    height: auto;
-}
-
-main {
-    padding: 20px;
+.header-content {
     max-width: 800px;
     margin: 0 auto;
-    padding-bottom: 60px;
-}
-
-.introduction, .qr-code {
-    margin-bottom: 2rem;
-    padding: 0 1rem;
-}
-
-.introduction h2, .qr-code h2 {
-    color: #4CAF50;
-}
-
-footer {
     text-align: center;
-    padding: 15px;
-    background-color: #333;
+    padding: 0 1.5rem;
+}
+
+.header-content h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
     color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: clamp(0.8rem, 1.5vw, 1rem);
-}
-
-.demo-gif {
-    margin: 2rem auto;
-    text-align: center;
-    overflow: hidden;
-    max-width: min(90vw, 600px);
-}
-
-.demo {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-}
-
-@media (hover: hover) {
-    .demo:hover {
-        transform: scale(1.02);
-    }
-}
-
-
-.demo-video {
-    margin: 2rem auto;
-    text-align: center;
-    overflow: hidden;
-    max-width: min(90vw, 600px);
-}
-
-.demo-video video {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-}
-
-@media (hover: hover) {
-    .demo-video video:hover {
-        transform: scale(1.02);
-    }
-}
-#qrcode {
-    display: flex;
-    justify-content: center;
     margin: 1rem 0;
+    line-height: 1.2;
 }
 
-#qrcode img {
-    max-width: 100%;
-    height: auto;
-}
-
-h2 {
-    font-size: clamp(1.2rem, 3vw, 2rem);
-}
-
-p {
-    font-size: clamp(1rem, 2vw, 1.1rem);
-    line-height: 1.6;
-}
-
-@media screen and (max-width: 768px) {
-    main {
-        padding: 15px;
-        padding-bottom: 70px;
-    }
-    
-    .introduction, .qr-code {
-        margin-bottom: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    main {
-        padding: 10px;
-        padding-bottom: 60px;
-    }
-    
-    .demo-gif {
-        margin: 1.5rem auto;
-    }
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 20px 0;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #45a049;
-}
-
-.features {
-    margin: 3rem 0;
-    padding: 0 1rem;
-}
-
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+.header-subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 1rem auto;
 }
 
 .feature-card {
     background: white;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .feature-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    display: block;
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
 }
 
 .feature-card h3 {
-    color: #4CAF50;
-    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2D3748;
+    margin-bottom: 1rem;
 }
 
-.footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.social-links a {
-    color: white;
-    text-decoration: none;
-    margin-left: 1rem;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-
-.social-links a:hover {
-    opacity: 1;
+.feature-card p {
+    color: #4A5568;
+    font-size: 1.1rem;
 }
 
 .quick-access {
-    margin: 3rem auto;
-    text-align: center;
     background: white;
-    padding: 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    max-width: 600px;
-}
-
-.quick-access h3 {
-    color: #4CAF50;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.access-options {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.qr-option, .button-option {
-    flex: 1;
-    min-width: 200px;
-    padding: 1.5rem;
-}
-
-.instruction {
-    font-weight: 500;
-    color: #666;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
-
-.divider {
-    position: relative;
-    padding: 1rem;
-}
-
-.divider span {
-    background: white;
-    padding: 0.5rem 1rem;
-    color: #666;
-    font-size: 0.9rem;
-    position: relative;
-    z-index: 1;
+    border-radius: 24px;
+    padding: 3rem 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 .telegram-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.8rem;
-    background-color: #0088cc;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 136, 204, 0.3);
-}
-
-.telegram-button:hover {
-    background-color: #0077b3;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 136, 204, 0.4);
-}
-
-.telegram-icon {
-    width: 24px;
-    height: 24px;
-}
-
-#qrcode {
-    background: white;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    margin: 0 auto;
-}
-
-#qrcode img {
-    display: block;
-    width: 180px !important;
-    height: 180px !important;
-}
-
-/* Mobile responsiveness */
-@media screen and (max-width: 600px) {
-    .access-options {
-        flex-direction: column;
-    }
-    
-    .divider {
-        width: 100%;
-        margin: 1rem 0;
-    }
-    
-    .divider::before,
-    .divider::after {
-        content: "";
-        flex: 1;
-        border-bottom: 1px solid #ddd;
-    }
-}
-
-.qr-code {
-    text-align: center;
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin: 2rem auto;
-    max-width: 500px;
-}
-
-.qr-code h2 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    color: #333;
-}
-
-.qr-access-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    margin: 2rem 0;
-    padding: 1rem;
-    background: #f8f9fa;
-    border-radius: 12px;
-}
-
-#qrcode {
-    padding: 1.5rem;
-    background: white;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-    transition: all 0.3s ease;
-}
-
-#qrcode:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
-
-.scan-instruction {
-    font-size: 1.1rem;
-    color: #4CAF50;
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
-
-.telegram-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.8rem;
-    background-color: #0088cc;
-    color: white;
     padding: 1rem 2rem;
-    border-radius: 12px;
-    text-decoration: none;
+    font-size: 1.1rem;
     font-weight: 500;
-    transition: all 0.3s ease;
+    border-radius: 12px;
+    background: #0088cc;
     box-shadow: 0 4px 12px rgba(0, 136, 204, 0.2);
 }
 
 .telegram-button:hover {
-    background-color: #006699;
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0, 136, 204, 0.3);
-}
-
-.divider {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #666;
-    margin: 1rem 0;
-}
-
-.divider::before,
-.divider::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.divider span {
-    padding: 0 1rem;
-}
-
-@media (max-width: 600px) {
-    .qr-access-container {
-        flex-direction: column;
-    }
-    
-    .divider {
-        margin: 1.5rem 0;
-    }
 }

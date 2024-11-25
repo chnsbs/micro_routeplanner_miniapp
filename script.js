@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     new QRCode(qrCodeElement, {
         text: telegramUrl,
-        width: 128,
-        height: 128,
-        colorDark: "#333",
+        width: 160,
+        height: 160,
+        colorDark: "#2D3748",
         colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.H
     });
