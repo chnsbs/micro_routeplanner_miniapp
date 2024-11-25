@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Route Planner Bot</title>
+    <meta name="description" content="Plan your perfect road trip with Route Planner Bot. Discover attractions, points of interest, and optimize your journey with our intelligent Telegram bot.">
+    <meta name="keywords" content="route planner, road trip planner, travel bot, telegram bot, journey planner, trip optimization">
+    <meta name="author" content="Route Planner Bot">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Route Planner Bot - Intelligent Travel Planning">
+    <meta property="og:description" content="Discover attractions and optimize your journey with our intelligent route planning bot.">
+    <meta property="og:image" content="https://yourwebsite.com/logo.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Route Planner Bot - Intelligent Travel Planning">
+    <meta name="twitter:description" content="Discover attractions and optimize your journey with our intelligent route planning bot.">
+    <meta name="twitter:image" content="https://yourwebsite.com/logo.png">
+    
+    <title>Route Planner Bot - Intelligent Travel Planning Assistant</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Route Planner Logo" class="logo">
-        <h1>Welcome to the Route Planner Bot</h1>
+        <img src="logo.png" alt="Route Planner Bot - Intelligent Travel Planning Assistant" class="logo">
+        <h2>Plan Your Perfect Journey</h2>
     </header>
     <main>
-        <section class="introduction">
-            <h2>About the Bot</h2>
+        <section class="introduction" aria-label="About Route Planner Bot">
+            <h1>Welcome to the Route Planner Bot</h1>
             <p>Our Route Planner Bot helps you discover attractions along your journey. Simply provide your trip details, and let the bot do the rest!</p>
             
             <div class="quick-access">
@@ -31,14 +46,14 @@
                     <div class="button-option">
                         <p class="instruction">🚀 Open directly in Telegram</p>
                         <a href="https://t.me/routePlanner_bot" class="telegram-button">
-                            <img src="telegram-logo.png" alt="Telegram" class="telegram-icon">
+                            <i class="fab fa-telegram"></i>
                             Open in Telegram
                         </a>
                     </div>
                 </div>
             </div>
             <div class="demo-gif">
-                <img src="route_planner_1.gif" alt="Route Planner Bot Demo" class="demo" loading="lazy">
+                <img src="route_planner_1.gif" alt="Demo showing how to use Route Planner Bot to discover attractions" class="demo" loading="lazy" width="600" height="400">
             </div>
             <p>Connect with us on Telegram: <a href="https://t.me/routePlanner_bot" target="_blank">@RoutePlanner_bot</a></p>
         </section>
@@ -62,23 +77,6 @@
                 </div>
             </div>
         </section>
-        <section class="qr-code">
-            <h2>Start Using the Bot</h2>
-            <div class="scan-instruction">
-                <i class="fas fa-mobile-alt"></i>
-                <span>Scan QR Code with your phone</span>
-            </div>
-            <div class="qr-access-container">
-                <div id="qrcode"></div>
-                <div class="divider">
-                    <span>or</span>
-                </div>
-                <a href="https://t.me/routePlanner_bot" class="telegram-button" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                    Open in Telegram
-                </a>
-            </div>
-        </section>
     </main>
     <footer>
         <div class="footer-content">
@@ -92,5 +90,25 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="script.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Route Planner Bot",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": "Telegram",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "description": "An intelligent route planning bot that helps discover attractions and optimize your journey.",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "100"
+        }
+    }
+    </script>
 </body>
 </html>
