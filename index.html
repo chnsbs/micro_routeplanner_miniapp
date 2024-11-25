@@ -25,62 +25,60 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Route Planner Bot - Intelligent Travel Planning Assistant" class="logo">
-        <h2>Plan Your Perfect Journey</h2>
+        <div class="header-content">
+            <img src="logo.png" alt="Route Planner Bot" class="logo">
+            <h1>Plan Your Perfect Journey</h1>
+            <p class="header-subtitle">Discover amazing places along your route with our intelligent travel companion</p>
+        </div>
     </header>
     <main>
-        <section class="introduction" aria-label="About Route Planner Bot">
+        <section class="introduction">
             <h1>Welcome to the Route Planner Bot</h1>
             <p>Our Route Planner Bot helps you discover attractions along your journey. Simply provide your trip details, and let the bot do the rest!</p>
-            
-            <section class="features">
-                <h2>Key Features</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <span class="feature-icon">🗺️</span>
-                        <h3>Smart Route Planning</h3>
-                        <p>Intelligent algorithms to find the best attractions along your route</p>
-                    </div>
-                    <div class="feature-card">
-                        <span class="feature-icon">⭐</span>
-                        <h3>Curated Attractions</h3>
-                        <p>Discover highly-rated points of interest tailored to your preferences</p>
-                    </div>
-                    <div class="feature-card">
-                        <span class="feature-icon">🚗</span>
-                        <h3>Easy Navigation</h3>
-                        <p>Simple interface to plan your perfect road trip</p>
-                    </div>
-                    <div class="feature-card">
-                        <span class="feature-icon">🚲</span>
-                        <h3>Cyclist-Friendly Routes</h3>
-                        <p>Discover attractions along cycling routes</p>
-                    </div>
-                </div>
-            </section>
+        </section>
 
-            <div class="quick-access">
-                <h3>Start Using the Bot</h3>
-                <div class="access-options">
-                    <div class="qr-option">
-                        <p class="instruction">📱 Scan QR Code with your phone</p>
-                        <div id="qrcode"></div>
-                    </div>
-                    <div class="button-option">
-                        <p class="instruction">🚀 Open directly in Telegram</p>
-                        <a href="https://t.me/routePlanner_bot" class="telegram-button">
-                            <i class="fab fa-telegram"></i>
-                            Open in Telegram
-                        </a>
-                    </div>
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>Smart Route Planning</h3>
+                    <p>Intelligent algorithms to find the best attractions along your route</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Curated Attractions</h3>
+                    <p>Discover highly-rated points of interest tailored to your preferences</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🚗</div>
+                    <h3>Easy Navigation</h3>
+                    <p>Simple interface to plan your perfect road trip</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🚲</div>
+                    <h3>Cyclist-Friendly Routes</h3>
+                    <p>Discover attractions along cycling routes</p>
                 </div>
             </div>
-            
-            <div class="demo-video">
-                <video autoplay muted loop playsinline>
-                    <source src="route_planner_2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+        </section>
+
+        <section class="quick-access">
+            <h2>Start Using the Bot</h2>
+            <div class="access-options">
+                <div class="qr-section">
+                    <p>📱 Scan QR Code with your phone</p>
+                    <div id="qrcode"></div>
+                </div>
+                <div class="telegram-section">
+                    <p>🚀 Open directly in Telegram</p>
+                    <a href="https://t.me/routePlanner_bot" class="telegram-button">
+                        Open in Telegram
+                    </a>
+                </div>
             </div>
         </section>
     </main>
