@@ -187,12 +187,12 @@ p {
 }
 
 .quick-access {
-    margin: 2rem auto;
+    margin: 3rem auto;
     text-align: center;
     background: white;
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 16px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     max-width: 600px;
 }
 
@@ -317,48 +317,52 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    margin: 1.5rem 0;
+    gap: 2.5rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 12px;
 }
 
 #qrcode {
-    padding: 1rem;
+    padding: 1.5rem;
     background: white;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
 }
 
 #qrcode:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .scan-instruction {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    font-size: 1.1rem;
+    color: #4CAF50;
+    font-weight: 500;
     margin-bottom: 1rem;
-    justify-content: center;
-    color: #666;
 }
 
 .telegram-button {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.8rem;
     background-color: #0088cc;
     color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
+    padding: 1rem 2rem;
+    border-radius: 12px;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 136, 204, 0.2);
 }
 
 .telegram-button:hover {
     background-color: #006699;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 136, 204, 0.2);
+    box-shadow: 0 6px 16px rgba(0, 136, 204, 0.3);
 }
 
 .divider {
