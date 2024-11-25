@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Route Planner Bot</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
 </head>
 <body>
     <header>
@@ -61,8 +63,21 @@
             </div>
         </section>
         <section class="qr-code">
-            <h2>Scan to Connect</h2>
-            <div id="qrcode"></div>
+            <h2>Start Using the Bot</h2>
+            <div class="scan-instruction">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Scan QR Code with your phone</span>
+            </div>
+            <div class="qr-access-container">
+                <div id="qrcode"></div>
+                <div class="divider">
+                    <span>or</span>
+                </div>
+                <a href="https://t.me/routePlanner_bot" class="telegram-button" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                    Open in Telegram
+                </a>
+            </div>
         </section>
     </main>
     <footer>
